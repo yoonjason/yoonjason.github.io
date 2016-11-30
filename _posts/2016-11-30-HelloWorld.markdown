@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "HElloWorld"
+layout: default
+title:  "Hello World"
 date:   2016-11-30 23:05:02 +0900
 categories: test
 ---
