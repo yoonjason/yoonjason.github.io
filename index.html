@@ -4,8 +4,11 @@ layout: default
 
 <section>
 <h3>Categories</h3>
+<h3>Categories</h3>
 {% for category in site.categories %}
     <a href="/category/{{ category[0] }}/" style="text-decoration: none;">{% if category[0] == 'swift' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}</a><br />
+{% endfor %}
+<p />
 
 	{% for post in site.posts %}
 		{% unless post.next %}
