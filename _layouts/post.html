@@ -21,7 +21,7 @@ layout: default
 
 	<div class="divider"></div>
 	{% for category in site.categories %}
-    <a href="/category/{{ category[0] }}/" style="text-decoration: none;">{% if category[0] == '123' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}</a><br />
+    <a href="/category/{{ category[0] }}/" style="text-decoration: none;">{% if category[0] == '123' %}{{ category[0] | upcase }}{% else %}{{ category[0] | capitalize }}{% endif %}</a>
 {% endfor %}
 <p />
 {% comment %}
@@ -30,7 +30,7 @@ The purpose of this snippet is to list all the tags you have in your site.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-	<a href="#{{ tag | slugify }}"> {{ tag }} </a>
+	<a href="#{{ tag | swift }}"> {{ tag }} </a>
 {% endfor %}
 
 
@@ -40,7 +40,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+	<h2 id="{{ tag | swift }}">{{ tag }}</h2>
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
@@ -51,7 +51,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 <small>{{ post.date | date_to_string }}</small>
 		 </a>
 		 {% for tag in post.tags %}
-			 <a class="tag" href="/_layouts/tag/#{{ tag | slugify }}">{{ tag }}</a>
+			 <a class="tag" href="/_layouts/tag/#{{ tag | swift }}">{{ tag }}</a>
 		 {% endfor %}
 		 </h3>
 		 </li>
