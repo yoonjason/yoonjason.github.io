@@ -13,6 +13,13 @@ layout: default
 </noscript>
 
 <article>
+
+	<div class="center">
+		<h1>{{ page.title }}</h1>
+		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
+	</div>
+
+	<div class="divider"></div>
 {% comment %}
 =======================
 The purpose of this snippet is to list all the tags you have in your site.
@@ -40,7 +47,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 <small>{{ post.date | date_to_string }}</small>
 		 </a>
 		 {% for tag in post.tags %}
-			 <a class="tag" href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+			 <a class="tag" href="/_layouts/tag/#{{ tag | slugify }}">{{ tag }}</a>
 		 {% endfor %}
 		 </h3>
 		 </li>
@@ -48,12 +55,6 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 	 {% endfor %}
 	</ul>
 {% endfor %}
-	<div class="center">
-		<h1>{{ page.title }}</h1>
-		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
-	</div>
-
-	<div class="divider"></div>
 
 	{{ content }}
 
