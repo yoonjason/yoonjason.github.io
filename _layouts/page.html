@@ -13,5 +13,11 @@ layout: default
 </article>
 
 <div class="page-navigation">
+<h4>Tags</h4>
+
+{% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+{% endfor %}
+  
 	<a class="home" href="{{site.baseurl}}/" title="Back to Homepage">Home</a>
 </div>
