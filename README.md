@@ -1,17 +1,35 @@
-# The Plain v2.0
+# Jekyll-Avalon
+[Demo](http://joshuaavalon.github.io/Jekyll-Avalon)
+![](https://raw.githubusercontent.com/joshuaavalon/Jekyll-Avalon/master/_screenshot/001.png)
 
-**The Plain** - just another white clean minimalist Jekyll theme that focuses on writing matters. Suitable for personal blog use. Made with [Sass](https://github.com/sass/sass) which automates the compression of the compiled CSS code, and cool **Jekyll layout** by [Anatol Broder](http://jch.penibelst.de/) for compressing the HTML code on-the-fly. The typeface used is [Karla](https://fonts.google.com/specimen/Karla?selection.family=Karla) from Google Fonts.
+## About
+Jekyll-Avalon is a [Materialize](https://github.com/dogfalo/materialize) Jekyll theme.
 
-[**Live Demo**](http://heiswayi.github.io/the-plain/)
+Featuring:
+* Material Design
+* Responsive Web Design
+* Tags and categories browsing
+* Lazy loading images
 
-### Screenshot
+## Installation
+This theme ***CANNOT* be built by GitHub. You have to build it yourself.
+Use the following command to build.
 
-![Screenshot](http://i.imgur.com/btWdSS0.png)
+```
+bundle install
+jekyll serve
+```
 
-### Credits
+Then upload the content in `_site` to GitHub or your host.
 
-This theme is based on Leonard Lamprecht's original [Jekyll theme](https://github.com/leo/leo.github.io).
+## Config
+Change everything you need in `_config.yml`. Change the footer in `_includes/footer.html`.
 
-### License
+If you want to change the color, go [here](https://github.com/dogfalo/materialize) to download SASS version 
+and replace the link in `_includes/head.html`.
 
-[MIT](LICENSE.md)
+For comment support, you can use [Disqus](https://disqus.com/) and add the embed code to `_layouts/post.html`.
+Same for Google Analytics, add the embed code to `_includes/script.html`.
+
+## Post
+All the usable fields available are in `2016-10-27-welcome-to-jekyll.markdown`.
