@@ -1,5 +1,5 @@
-name: Twister
-description: a powerful jekyll theme
+name: Yoon
+description: 내 코딩
 url: #place url
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
@@ -11,14 +11,14 @@ author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: /img
 author_default_avatar: /profile-pic.jpg
-tumblr: "#"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
-facebook: "#"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
+#tumblr: "#"
+#pinterest: "#"
+#instagram: "#"
+#twitter: "#"
+#facebook: "#"
+#youtube: "#"
+#vimeo: "#"
+#soundcloud: "#"
 
 encoding: utf-8
 defaults:
