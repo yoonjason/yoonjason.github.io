@@ -1,57 +1,53 @@
-Scribble
-========
+# Jekyll-Avalon
+[Demo](http://joshuaavalon.github.io/Jekyll-Avalon)
+![](https://raw.githubusercontent.com/joshuaavalon/Jekyll-Avalon/master/_screenshot/001.png)
 
-A Jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
-<br />
-[More themes](https://github.com/muan/muan.github.com/releases).
+## About
+Jekyll-Avalon is a [Materialize](https://github.com/dogfalo/materialize) Jekyll theme.
 
-![screenshot](https://cloud.githubusercontent.com/assets/1153134/11014801/12c7940a-853e-11e5-9f7b-87325c9bc695.png)
+Featuring:
+* Material Design
+* Responsive Web Design
+* Tags and categories browsing
+* Lazy loading images
 
-There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind.
+## Installation
+This theme **CANNOT** be built by GitHub. You have to build it yourself.
+Please follows the following question.
 
-This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme.
+1. Are you willing to do extra works other than just blogging?
 
-The theme is mobile optimized but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
+ Yes > 3
+ 
+ No > 2
 
----
+2. Are you willing to other git service like GitLab?
 
-### Get started
+ Yes > Upload this repository to GitLab. It will auto-deploy like GitHub. Make sure you have turn on the GitLab Runner.
+ 
+ No > This theme is not for you.
 
-1. [Fork the repository](https://github.com/muan/scribble/fork).
-2. Clone the repository to your computer.<br /> `git clone https://github.com/username/scribble`
-3. `bundle install`
-4. **Using older versions of Jekyll**<br />
-  Build and run Jekyll using `jekyll --server --auto`.<br />
-  **Using [Jekyll 1.0](http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/)**<br />
-  Build Jekyll using `jekyll build`.<br />
-  Then run Jekyll using `jekyll serve --watch`, go to http://localhost:4000 for your site.
+3. Install Ruby if you don't have it. In you are using Windows, you may want to try [Ruby Installer](http://rubyinstaller.org/).
 
----
+4. Install Jekyll and Bundler if you don't have it. Run the following commands in command prompt to install the packages.
+ ```
+ gem install jekyll bundler
+ ```
 
-### Make it yours
+5. cd to your repository directory. Run the following command in command prompt to build.
+ ```
+ bundle exec jekyll serve
+ ```
+6. Upload the content in `_site` to GitHub or your host.
 
-1. I have extracted most user specific information to `_config.yml`, you should be able to set up almost everything from it.
-2. Change about.md for blog intro.
-3. For domain settings, see [the guide from GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+## Config
+Change everything you need in `_config.yml`. Change the footer in `_includes/footer.html`.
 
----
+If you want to change the color, go [here](https://github.com/dogfalo/materialize) to download SASS version 
+and replace the link in `_includes/head.html`.
 
-### Options
+For comment support, you can use [Disqus](https://disqus.com/) and add the embed code to `_layouts/post.html`.
+Same for Google Analytics, add the embed code to `_includes/script.html`.
 
-When writing a post, there are 3 options you can add to the header.
-
-1. **disqus: y**<br />
-  If disqus is set to 'y', at the end of the post there will be a disqus thread, just like this one. To use disqus, you MUST [set up your own disqus account](http://disqus.com/).
-
-2. **share: y**<br />
-  An option for showing tweet and like button under a post.
-
-3. **date**: 2013-05-06 18:07:17<br />
-  Date is not a required header since Jekyll reads the file name for date, this was added in only for the **signoff time**. (as shown at the end of this post) If you don't want the signoff time, go into `/includes/signoff.html` remove the `<span>`, and remove `{% include signoff.html %}` from `/layouts/post.html`.
-
----
-
-### The end
-
-Like it? [Tell me](http://twitter.com/muanchiou).<br/>
-Question? [Use GitHub Issues](https://github.com/muan/scribble/issues).
+## Post
+All the usable fields available are in `2016-10-27-welcome-to-jekyll.markdown`.
