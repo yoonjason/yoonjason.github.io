@@ -3,7 +3,7 @@ title: Lazy Property
 updated: 2017-03-13 21:45
 layout: post
 author: Yoon
-category: 잡소리
+category: Swift 3.0
 tags: 
 - Swift
 - iOS
