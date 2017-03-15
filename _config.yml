@@ -12,7 +12,7 @@ locale: kr_KR
 ### Personal info and site tools info:
 #twitter_username: luffy1022
 github_username:  yoonjason
-disqus_shortname:
+disqus_shortname: yoonjason-github-io
 favicon:     "/images/favicon.ico"
 aboutme: Hi, # these are shown on aboutme-sidebar.
 aboutme_photo: https://devimages.apple.com.edgekey.net/assets/elements/icons/swift/swift-64x64.png# your photo.
